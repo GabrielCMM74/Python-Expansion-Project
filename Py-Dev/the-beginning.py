@@ -138,6 +138,19 @@ my_list = [
 
 print(my_list[0][' a '][2])
 
+# Lists have order, but a player for a game can use a dictionary. A dict can have way more infromation 
+#Dict keys 
+
+
+dictionary2 = {
+    123: [1,2,3],
+    True: 'Hello',
+    'is_Magic': True
+}
+print(dictionary2[123])
+#Keys need to be immutable l side
+
+
 
 
 
