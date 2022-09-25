@@ -288,14 +288,14 @@ for i,char in enumerate(list(range(100))):
 
 i = 0
 while i< 50:
-    print(i)
-    i += 1
+    print
 
-#Iterating can become a very long process
 
-#Break 
-# Continue skips and goes back to the loop 
-# pass - placeholder for coding just keep passing 
+
+
+
+
+
 
 
 
