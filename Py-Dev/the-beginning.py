@@ -89,6 +89,8 @@
 # import numbers
 
 
+
+
 basket = [1,2,3,4,5,6]
 
 basket.insert(4, 100)
@@ -297,9 +299,32 @@ while i< 50:
 # Continue skips and goes back to the loop 
 # pass - placeholder for coding just keep passing 
 
+# picture = [
+# [0,0,0,1,0,0,0],
+# [0,0,1,1,1,0,0],
+# [0,1,1,1,1,1,0],
+# [1,1,1,1,1,1,1],
+# [0,0,0,1,0,0,0],
+# [0,0,0,1,0,0,0]
+# ]
 
+# for row in picture:
+#     for pixel in row:
+#         if (pixel==1):
+#             print('*', end='')
+#         else:
+#             print(' ', end='')
+#     print('')
 
+some_list = ['a', 'b', 'c', 'd', 'b', 'c', 'm', 'n', 'n']
+duplicates =[]
 
+for i in some_list: 
+    if some_list.count(i) > 1:
+        if i not in duplicates:
+            duplicates.append(i)
+        
+print(duplicates)
 
 
 
