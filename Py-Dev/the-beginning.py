@@ -326,13 +326,49 @@ for i in some_list:
         
 print(duplicates)
 
+#Functions 
+def say_hello(): 
+    print('hello')
+say_hello()
 
+# Remember Object Hirearchy 
+# Param
+def say_hello2(name, title, emoji): 
+    print(f' hello is this {name} working {title} and this {emoji} ')
+say_hello2('G', 'IT', '😎')
+#Argument
 
+#Keyword 
+say_hello2(emoji='😂', name='Bada', title='MS')
 
+#default say_hello(name='Darth', emoji='😀' ) - If you forget to give it arguments then this is the default 
 
+def sum(num1, num2):
+    return num1 + num2
+    
+print(sum(4,5))
 
+def checkDriverAge(age=0):
+    # age = input("What is your age?: ")
 
+    if int(age) < 18:
+        print("Sorry, you are too young to drive this car. Powering off")
+    elif int(age) > 18:
+        print("Powering On. Enjoy the ride!");
+    elif int(age) == 18:
+	    print("Congratulations on your first year of driving. Enjoy the ride!")
 
+checkDriverAge(18)
+
+#1. Wrap the above code in a function called checkDriverAge(). Whenever you call this function, you will get prompted for age. 
+# Notice the benefit in having checkDriverAge() instead of copying and pasting the function everytime?
+
+#2 Instead of using the input(). Now, make the checkDriverAge() function accept an argument of age, so that if you enter:
+#checkDriverAge(92);
+#it returns "Powering On. Enjoy the ride!"
+#also make it so that the default age is set to 0 if no argument is given.
+
+#Methods, Functions 
 
 
 
