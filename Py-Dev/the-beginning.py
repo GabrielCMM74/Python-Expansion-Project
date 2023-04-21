@@ -343,10 +343,10 @@ say_hello2(emoji='😂', name='Bada', title='MS')
 
 #default say_hello(name='Darth', emoji='😀' ) - If you forget to give it arguments then this is the default 
 
-def sum(num1, num2):
-    return num1 + num2
+# def sum(num1, num2):
+#     return num1 + num2
     
-print(sum(4,5))
+# print(sum(4,5))
 
 def checkDriverAge(age=0):
     # age = input("What is your age?: ")
@@ -370,23 +370,71 @@ checkDriverAge(18)
 
 #Methods, Functions 
 
+# methods are all owned by something 
+
+def test(a):
+    '''
+    Info: this fuction tests and prints param a 
+    '''
+    print(a)
+    
+test("CHeck this")
+
+def is_odd_or_even(num): 
+    if num % 2 == 0:
+        return True
+    return False
+print(is_odd_or_even(50))
+
+# args and kwargs 
+
+def super_Func(*args, **kwargs):
+    return sum(args)
+
+print(super_Func(1,2,3,4,5, num1=10,num2=15))
+
+#Rule params, *args, default parameters, **kwargs 
+
+def highest_Even(li):
+    evens = []
+    for i in li:
+        if i % 2 == 0:
+            evens.append(i)
+    return max(evens)
+
+print(highest_Even([10,12,14,1,5]))
+
+#walrus 
+a = "helloooooooo"
+
+if ((n := len(a)) > 10):
+    print(f" too long {n} elements")
+
+while((n := len(a)) > 1):
+    print(n)
+    a = a[:-1]
+
+print(a)
+
+#
+total = 0 
+def count():
+    global total 
+    total += 1 
+    return total
+
+count()
+count()
+count()
+print(count())
 
 
+x = float(2.8)
 
+print(x)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+f = "Hello"[0]
+print(f)
 
 
 
