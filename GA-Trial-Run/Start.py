@@ -246,8 +246,18 @@ print(D.mro())
 D.__str__
 
 
+class Akiflow:
+    def __init__(self, ability, power, age):
+        self.ability = ability
+        self.power = power
+        self.age = age
 
+    def combat(self):
+        return f'I have {self.power} and I am keen'
+    
+aki1 = Akiflow('Flight', 'Invisible', 67)
 
+print(aki1.combat())
 
 
 
