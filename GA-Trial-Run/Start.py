@@ -259,15 +259,31 @@ aki1 = Akiflow('Flight', 'Invisible', 67)
 
 print(aki1.combat())
 
+class Main: 
+    def __init__(self, action, task):
+        self.action = action 
+        self.task = task 
+    
+    def problem(self):
+        return f'I have this problem but my {self.action} and I will do this {self.task} to get it done '
 
 
 
+class Sub(Main):
+    def __init__(self, action, task):
+        super().__init__(action, task)
 
 
+    def SubIm(self):
+        return 'Accomplished sub goal'
 
+ack = Sub
 
+print(ack.SubIm('self'))
 
+dak = Main('bat', 'handle')
 
+print(dak.problem())
 
 
 
