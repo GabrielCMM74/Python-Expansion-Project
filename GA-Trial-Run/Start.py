@@ -285,6 +285,21 @@ dak = Main('bat', 'handle')
 
 print(dak.problem())
 
+class Cashay:
+    
+    def __init__(self, cries, hungry, sad):
+        self.cries = cries
+        self.hungry = hungry 
+        self.sad = sad 
+
+    def power(self):
+        return f'Cashay is {self.cries} and she is {self.hungry} and she feels {self.sad}'
+    
+
+Cashay2 = Cashay('alot', 'very hungry', ' feeling depressed')
+
+print(Cashay2.power()) 
+
 
 
 
