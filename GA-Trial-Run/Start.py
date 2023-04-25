@@ -304,8 +304,20 @@ print(Cashay2)
 
 #Functional Programming 
 
+# Separation of concerns 
 
+def multi2(times):
+    # new_times = []
+    # for item in times:
+    #     new_times.append(item*2)
+    # return new_times
+    return times*2
 
+print(multi2([2,4,8]))
+
+#Pure functions are better - a function should do something really well 1 thing
+
+print(list(map(multi2, [4,8,10])))
 
 
 
