@@ -319,10 +319,16 @@ print(multi2([2,4,8]))
 
 print(list(map(multi2, [4,8,10])))
 
+#Map automatically does the above code and creates an object 
+new_list = [4,8,10,3]
+guest_list = [4,8,10,3, 40, 60, 80 ]
+def check_odd(times):
+    return times % 2 != 0
 
+print(list(filter(check_odd, new_list)))
+print(new_list)
 
-
-
+print(list(zip(new_list, guest_list)))
 
 
 
