@@ -302,6 +302,8 @@ print(Cashay2.power())
 
 print(Cashay2)
 
+#Functional Programming 
+
 
 
 
