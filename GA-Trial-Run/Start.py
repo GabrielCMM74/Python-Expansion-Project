@@ -300,7 +300,7 @@ Cashay2 = Cashay('alot', 'very hungry', ' feeling depressed')
 
 print(Cashay2.power()) 
 
-
+print(Cashay2)
 
 
 
