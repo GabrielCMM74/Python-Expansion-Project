@@ -37,12 +37,15 @@ def initiate(ini, scores):
 
 print(reduce(initiate, total_list))
 
+#Lambda 
+
+# lambda param: action(param)
+
+new_list = [2,4,3,6,7,8,9]
 
 
 
-
-
-
+print(list(map(lambda item: item*2, new_list)))
 
 
 
