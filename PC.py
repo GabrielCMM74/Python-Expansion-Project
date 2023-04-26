@@ -52,25 +52,29 @@ list_squared = [5,4,3]
 
 # print(list(lambda item: item in list_squared * item))
 
+comp_list = [char for char in 'iterable']
+print(comp_list)
+
+new2_list = [num for num in range(0,100)]
+print(new2_list)
+
+new3_list = [num**2 for num in range(0,100) if num % 2 == 0]
+print(new3_list)
 
 
+#dict compr
+simple_dict = { 'a': 1,'b': 2}
+my_dict = {key:value**2 for key,value in simple_dict.items() if value%2==0}
 
+new_dict = {num:num*2 for num in [1,2,3]}
+print(my_dict)
+print(new_dict)
 
+dupli_list = ['a', 'c', 'b', 'b', 'd', 'n', 'n']
 
+duplicated = [x for x in dupli_list if dupli_list.count(x) > 1]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(duplicated)
 
 
 
