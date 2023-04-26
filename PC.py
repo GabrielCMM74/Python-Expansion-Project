@@ -48,9 +48,9 @@ new_list = [2,4,3,6,7,8,9]
 print(list(map(lambda item: item*2, new_list)))
 
 
+list_squared = [5,4,3]
 
-
-
+# print(list(lambda item: item in list_squared * item))
 
 
 
