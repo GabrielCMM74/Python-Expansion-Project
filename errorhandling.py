@@ -1,6 +1,6 @@
 # an Error that cuases an error that stops code is called an exception
 
-# Different type of errors - Name, syntax, Key, reference explains
+# Different type of errors - Name, syntax, Key, reference explains``
 
 # while True:
 #     try:
