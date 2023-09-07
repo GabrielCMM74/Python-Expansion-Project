@@ -122,12 +122,5 @@ def checkHello():
 
 
 checkHello()
-
-
-
-
-
-#Another
-
-
+# Another
 # Divide into chunks that make sense
