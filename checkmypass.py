@@ -10,11 +10,18 @@ def request_api_data(query_char):
     return res
 
 
+def read_res(response):
+    print(response.text)
+
+
 def pwned_api_check(password):
     # Check if it is in API
     sha1password = hashlib.sha1(password.encode('utf-8')).hexdigest().upper()
     # sha1password = hashlib.sha1(password.encode('utf-8'))
-    return sha1password
+    first5_char, tail = sha1password[:5], sha1password[5:]
+    response = request_api_data(first5_char)
+    print(response)
+    return read_res(response)
 
 
 pwned_api_check('123')
