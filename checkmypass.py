@@ -4,7 +4,7 @@ import sys
 
 
 def request_api_data(query_char):
-    url = 'https://api.pwnedpasswords.com/range/' + 'CBFDA'
+    url = 'https://api.pwnedpasswords.com/range/' + query_char
     res = requests.get(url)
     if res.status_code != 200:
         raise RuntimeError(f'Error Fetching: {res.status_code}, checking')
@@ -44,4 +44,5 @@ def main(args):
     return 'done!'
 
 
-main(sys.argv[1:])
+if __name__ == '__main__':
+    sys.exit(main(sys.argv[1:]))
