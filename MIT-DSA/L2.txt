@@ -1,0 +1,15 @@
+API/ADT Interface vs DSA 
+
+Static Sequence Interface 
+- build
+- len 
+- iter-Sequence
+- get at 
+- set at 
+
+Static Array - Model computation (Word RAM model)
+- memory is an Array of word rams-bit. Our memory is divided into words and called bits, 
+and access it at a specific location
+- if you want to access the Array[i]
+Then that means memory[address(array) + i]
+Meaning I can access my RAM and get the value 
